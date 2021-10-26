@@ -230,12 +230,17 @@ footer p {
 }
 
 .modal__inner img {
-  width:  426px;
-  height: 240px;
+  width: 100%;
   border: 2px solid#666;
 }
 
+.modal-img {
+  width: 50%;
+  margin-right: 50px;
+}
+
 .modal-text {
+  width: 50%;
   display: flex;
   flex-flow:column;
   justify-content:space-between;
