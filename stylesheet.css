@@ -12,6 +12,10 @@ header, .navbar {
   cursor: pointer;
 }
 
+.mb-br {
+  display: none;
+}
+
 .navbar a, .navbar a:hover {
   color: white;
 }
@@ -101,17 +105,120 @@ footer {
   border-top: 2px solid darkgray;
   color: darkgray;
   text-align: center;
-  margin: 0 100px;
+  margin: 0 10%;
 }
 
 footer p {
   font-size: 0.75rem;
 }
 
-/* Modal */
+/* ハンバーガーボタン */
+.hamburger {
+  display : none;
+  position: fixed;
+  z-index : 3;
+  right : 10px;
+  top   : 20px;
+  width : 42px;
+  height: 42px;
+  cursor: pointer;
+  text-align: center;
+  -webkit-transition: 0.5s all;
+  -moz-transition   : 0.5s all;
+  transition        : 0.5s all;
+}
+.hamburger span {
+  display : block;
+  position: absolute;
+  width   : 30px;
+  height  : 2px ;
+  left    : 6px;
+  background : white;
+}
+.hamburger span:nth-child(1) {
+  top: 10px;
+}
+.hamburger span:nth-child(2) {
+  top: 20px;
+}
+.hamburger span:nth-child(3) {
+  top: 30px;
+}
+
+/* ナビ開いてる時のボタン */
+.hamburger.active{
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+.hamburger.active span:nth-child(1) {
+  top : 16px;
+  left: 6px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform   : rotate(-45deg);
+  transform        : rotate(-45deg);
+}
+.hamburger.active span:nth-child(2) {
+  top: 16px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform   : rotate(45deg);
+  transform        : rotate(45deg);
+}
+.hamburger.active span:nth-child(3) {
+  opacity: 0;
+}
+
+nav.globalMenuSp {
+  position: fixed;
+  z-index : 2;
+  top  : 0;
+  left : 0;
+  color: black;
+  text-align: center;
+  transform: translateY(-400%);
+  transition: all 0.6s;
+  width: 100%;
+}
+
+nav.globalMenuSp ul {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+nav.globalMenuSp ul li {
+  background-color: forestgreen;
+  list-style-type: none;
+  padding: 0;
+  height: 80px;
+  width: 100%;
+  border-bottom: 1px solid white;
+}
+
+nav.globalMenuSp ul li:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+nav.globalMenuSp ul li:hover{
+  background-color: darkgray;
+}
+
+nav.globalMenuSp ul li a {
+  display: block;
+  font-size: 1.25rem;
+  color: white;
+  padding: 25.2px 0;
+  text-decoration :none;
+}
+
+nav.globalMenuSp.active {
+  transform: translateY(0%);
+}
+
+/* モーダルウィンドウ */
 
 #modal-0, #modal-1 {
-  background-color: #f7f7f7;
+  background-color: white;
   display: none;
   padding: 20px 20px 80px 20px;
   position: fixed;
@@ -201,4 +308,68 @@ footer p {
   height: 100%;
   width: 100%;
   z-index: 9;
+}
+
+/* レスポンシブデザイン */
+/* タブレット向けレイアウト */
+@media all and (max-width: 1000px) {
+  .about .contents {
+    flex-flow:column;
+    justify-content: space-between;
+  }
+
+  .about img {
+    margin-bottom: 50px;
+  }
+
+  .work {
+    padding-bottom: 50px;
+  }
+
+  .work .contents {
+    flex-flow:column;
+    justify-content: space-between;
+  }
+
+  .work-item {
+    margin-bottom: 50px;
+  }
+}
+
+/* スマホ向けレイアウト */
+@media all and (max-width: 670px) {
+  .navbar-brand{
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  .mb-br {
+    display: inline;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .hamburger {
+    display : block;
+  }
+
+  .about img {
+    height: 200px;
+    width: 200px;
+  }
+
+  .work-img {
+    height: 144px;
+    width: 256px;
+  }
+
+  .top h1 {
+    font-size: 2rem;
+  }
+
+  body p {
+    font-size: 0.7rem;
+  }
 }
