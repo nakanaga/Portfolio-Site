@@ -334,6 +334,15 @@ nav.globalMenuSp.active {
   .work-item {
     margin-bottom: 50px;
   }
+
+  .modal-contents {
+    flex-flow:column;
+    justify-content: space-between;
+  }
+
+  .modal-img, .modal-text {
+    width: 70%;
+  }
 }
 
 /* スマホ向けレイアウト */
@@ -369,7 +378,7 @@ nav.globalMenuSp.active {
     font-size: 2rem;
   }
 
-  body p {
+  body p,.modal-text a  {
     font-size: 0.7rem;
   }
 }
