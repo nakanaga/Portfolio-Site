@@ -346,7 +346,7 @@ nav.globalMenuSp.active {
 }
 
 /* スマホ向けレイアウト */
-@media all and (max-width: 670px) {
+@media all and (max-width: 780px) {
   .navbar-brand{
     font-size: 1.5rem;
     text-align: left;
@@ -380,5 +380,23 @@ nav.globalMenuSp.active {
 
   body p,.modal-text a  {
     font-size: 0.7rem;
+  }
+
+  #modal-0, #modal-1 {
+    padding: 0 0 60px 0;
+  }
+
+  .modal-h2 {
+    font-size: 1.25rem;
+  }
+
+  .modal-h2, .modal-h3 {
+    margin: 15px 0;
+    padding: 0;
+  }
+
+  .modal-btn {
+    bottom: 50px;
+    right: -10px;
   }
 }
