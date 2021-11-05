@@ -1,6 +1,6 @@
 body {
   font-family: border-box;
-  background-color: #ccc;
+  background-color: #E6E6E6;
   }
 
 header, .navbar {
@@ -22,7 +22,7 @@ header, .navbar {
 }
 
 .navbar a, .navbar a:hover {
-  color: #ccc;
+  color: #E6E6E6;
 }
 
 .container {
@@ -34,7 +34,7 @@ header, .navbar {
 }
 
 .top {
-  color: #ccc;
+  color: #E6E6E6;
   background-image: url(../images/top.jpg);
   background-size: cover;
   padding: 300px 0;
@@ -90,13 +90,13 @@ header, .navbar {
 }
 
 .btn {
-  color: #ccc;
+  color: #E6E6E6;
   background-color: rgb(34, 139, 34, .7);
   border: rgb(34, 139, 34, .7);
 }
 
 .btn:hover {
-  color: #ccc;
+  color: #E6E6E6;
   background-color: rgb(34, 139, 34);
   border: rgb(34, 139, 34);
 }
@@ -107,14 +107,15 @@ header, .navbar {
 
 footer {
   height: 40px;
-  border-top: 2px solid darkgray;
-  color: darkgray;
+  border-top: 2px solid #696969;
+  color: #696969;
   text-align: center;
   margin: 0 10%;
 }
 
 footer p {
   font-size: 0.75rem;
+  padding: 10px;
 }
 
 /* ハンバーガーボタン */
@@ -138,7 +139,7 @@ footer p {
   width   : 30px;
   height  : 2px ;
   left    : 6px;
-  background : #ccc;
+  background : #E6E6E6;
 }
 .hamburger span:nth-child(1) {
   top: 10px;
@@ -196,7 +197,7 @@ nav.globalMenuSp ul li {
   padding: 0;
   height: 80px;
   width: 100%;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #E6E6E6;
 }
 
 nav.globalMenuSp ul li:last-child {
@@ -211,7 +212,7 @@ nav.globalMenuSp ul li:hover{
 nav.globalMenuSp ul li a {
   display: block;
   font-size: 1.25rem;
-  color: #ccc;
+  color: #E6E6E6;
   padding: 25.2px 0;
   text-decoration :none;
 }
@@ -223,7 +224,7 @@ nav.globalMenuSp.active {
 /* モーダルウィンドウ */
 
 #modal-0, #modal-1 {
-  background-color: #ccc;
+  background-color: #E6E6E6;
   display: none;
   padding: 20px 20px 80px 20px;
   position: fixed;
@@ -289,7 +290,7 @@ nav.globalMenuSp.active {
 
 .modal-btn {
   background-color: #228b22;
-  color: #ccc;
+  color: #E6E6E6;
   font-weight: bold;
   border-radius: 50%;
   cursor: pointer;
