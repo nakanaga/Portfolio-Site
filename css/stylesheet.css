@@ -1,6 +1,11 @@
+body {
+  font-family: border-box;
+  background-color: #ccc;
+  }
+
 header, .navbar {
   height: 80px;
-  background: forestgreen;
+  background-color: forestgreen;
   width: 100%;
   position :fixed;
   top: 0;
@@ -17,7 +22,7 @@ header, .navbar {
 }
 
 .navbar a, .navbar a:hover {
-  color: white;
+  color: #ccc;
 }
 
 .container {
@@ -29,7 +34,7 @@ header, .navbar {
 }
 
 .top {
-  color: white;
+  color: #ccc;
   background-image: url(../images/top.jpg);
   background-size: cover;
   padding: 300px 0;
@@ -85,14 +90,14 @@ header, .navbar {
 }
 
 .btn {
-  color: white;
-  background: rgb(34, 139, 34, .7);
+  color: #ccc;
+  background-color: rgb(34, 139, 34, .7);
   border: rgb(34, 139, 34, .7);
 }
 
 .btn:hover {
-  color: white;
-  background: rgb(34, 139, 34);
+  color: #ccc;
+  background-color: rgb(34, 139, 34);
   border: rgb(34, 139, 34);
 }
 
@@ -133,7 +138,7 @@ footer p {
   width   : 30px;
   height  : 2px ;
   left    : 6px;
-  background : white;
+  background : #ccc;
 }
 .hamburger span:nth-child(1) {
   top: 10px;
@@ -172,7 +177,7 @@ nav.globalMenuSp {
   z-index : 2;
   top  : 0;
   left : 0;
-  color: black;
+  color: #363636;
   text-align: center;
   transform: translateY(-400%);
   transition: all 0.6s;
@@ -191,7 +196,7 @@ nav.globalMenuSp ul li {
   padding: 0;
   height: 80px;
   width: 100%;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #ccc;
 }
 
 nav.globalMenuSp ul li:last-child {
@@ -206,7 +211,7 @@ nav.globalMenuSp ul li:hover{
 nav.globalMenuSp ul li a {
   display: block;
   font-size: 1.25rem;
-  color: white;
+  color: #ccc;
   padding: 25.2px 0;
   text-decoration :none;
 }
@@ -218,7 +223,7 @@ nav.globalMenuSp.active {
 /* モーダルウィンドウ */
 
 #modal-0, #modal-1 {
-  background-color: white;
+  background-color: #ccc;
   display: none;
   padding: 20px 20px 80px 20px;
   position: fixed;
@@ -271,7 +276,7 @@ nav.globalMenuSp.active {
   content: "";
   height: 2px;
   flex-grow: 1;
-  background-color: black;
+  background-color: #363636;
 }
 
 .head-border:before {
@@ -284,7 +289,7 @@ nav.globalMenuSp.active {
 
 .modal-btn {
   background-color: #228b22;
-  color: white;
+  color: #ccc;
   font-weight: bold;
   border-radius: 50%;
   cursor: pointer;
