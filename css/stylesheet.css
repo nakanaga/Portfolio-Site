@@ -81,7 +81,7 @@ header, .navbar {
   border: 2px solid darkgray;
 }
 
-.work-item {
+#work .item {
   height: 400px;
   display: flex;
   flex-flow:column;
@@ -101,7 +101,7 @@ header, .navbar {
   border: rgb(34, 139, 34);
 }
 
-.contact .btn {
+#contact .btn {
   margin-top: 50px;
 }
 
