@@ -30,7 +30,7 @@ header, .navbar {
 
 .top {
   color: white;
-  background-image: url(images/top.jpg);
+  background-image: url(top.jpg);
   background-size: cover;
   padding: 300px 0;
 }
