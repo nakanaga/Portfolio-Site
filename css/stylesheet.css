@@ -319,25 +319,25 @@ nav.globalMenuSp.active {
 /* レスポンシブデザイン */
 /* タブレット向けレイアウト */
 @media all and (max-width: 1000px) {
-  .about .contents {
+  #about .contents {
     flex-flow:column;
     justify-content: space-between;
   }
 
-  .about img {
+  #about img {
     margin-bottom: 50px;
   }
 
-  .work {
+  #work {
     padding-bottom: 50px;
   }
 
-  .work .contents {
+  #work .contents {
     flex-flow:column;
     justify-content: space-between;
   }
 
-  .work-item {
+  #work .item {
     margin-bottom: 50px;
   }
 
@@ -370,7 +370,7 @@ nav.globalMenuSp.active {
     display : block;
   }
 
-  .about img {
+  #about img {
     height: 200px;
     width: 200px;
   }
